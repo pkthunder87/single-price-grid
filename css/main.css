@@ -22,6 +22,11 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Karla", sans-serif;
@@ -56,6 +61,14 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
+@media only screen and (max-width: 500px) {
+  .single-price {
+    height: 80vh;
+    width: 80vw;
+    grid-template-columns: 80vw;
+    grid-template-rows: 36% 32% 32%;
+  }
+}
 .single-price .single-top {
   background-color: #fff;
   grid-column: span 2;
@@ -68,6 +81,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .single-price .single-top {
+    grid-column: span 1;
+  }
 }
 .single-price .single-top__heading--2 {
   color: #5fc5c3;
@@ -84,6 +102,12 @@ body {
   color: hsl(216, 25%, 70%);
   margin-top: -1rem;
   line-height: 1.6;
+}
+@media only screen and (max-width: 500px) {
+  .single-price .single-top__details {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
 }
 .single-price .single-left {
   background-color: var(--color-cyan);
