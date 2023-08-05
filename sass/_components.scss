@@ -1,15 +1,111 @@
 .single-price {
   display: grid;
 
-  height: 40rem;
-  width: 60rem;
+  height: 47.5rem;
+  width: 63.5rem;
 
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding: 2rem;
-  box-shadow: 0.1rem 0.8rem 1.5rem 0.5rem rgba(0, 0, 0, 0.05);
+  grid-template-rows: 45% 55%;
+  box-shadow: 0 0.8rem 3rem 0.5rem rgba(152, 166, 189, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
 
   .single-top {
+    background-color: #fff;
     grid-column: span 2;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__heading--2 {
+      color: #5fc5c3;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-top: 0.2rem;
+    }
+
+    &__heading--3 {
+      color: var(--color-bright-yellow);
+      margin-top: 0.8rem;
+      font-size: 1.75rem;
+    }
+
+    &__details {
+      color: hsl(216, 25%, 70%);
+      margin-top: -1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .single-left {
+    background-color: var(--color-cyan);
+    padding: 2.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__heading {
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+      color: #eee;
+    }
+
+    .price-month {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+
+      &__price {
+        font-size: 3.2rem;
+        color: #fff;
+      }
+
+      &__month {
+        color: #6cd1cf;
+      }
+    }
+
+    &__details {
+      margin-top: -1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn {
+      background-color: var(--color-bright-yellow);
+      border: none;
+      padding: 1.5rem 0;
+      border-radius: 5px;
+      width: 100%;
+      color: inherit;
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      cursor: pointer;
+      box-shadow: 0 0.8rem 3rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .single-right {
+    padding: 2.5rem 4rem;
+    background-color: #54bab9;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__heading--4 {
+      margin-top: 1.5rem;
+      color: #eee;
+      font-size: 1.7rem;
+    }
+
+    &__reasons {
+      list-style: none;
+
+      &--item {
+        font-size: 1.4rem;
+        margin-bottom: 3px;
+      }
+    }
   }
 }

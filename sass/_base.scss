@@ -33,6 +33,8 @@ body {
   font-size: 1.6rem;
   width: 100vw;
   height: 100vh;
+  background-color: var(--color-light-gray);
+  color: hsla(203, 44%, 93%, 0.88);
 
   display: flex;
   flex-direction: column;
